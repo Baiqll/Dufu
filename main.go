@@ -30,7 +30,7 @@ func main() {
 
 
 	flag.StringVar(&url, "u", "", "URL")
-	flag.StringVar(&wordlists, "w", "", "子域名字典")
+	flag.StringVar(&wordlists, "w", "", "FUZZ字典")
 	flag.BoolVar(&silent, "silent", false, "静默状态")
 
 	// 解析命令行参数写入注册的flag里
