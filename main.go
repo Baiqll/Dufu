@@ -76,8 +76,8 @@ func combination(url string, wordlists string){
 
 	// 使用字典
 	for _, path := range get_word_dict_list(wordlists) {
-		new_url := strings.Replace(url, "FUZZ", path, -1)
-		fmt.Print(new_url)
+		new_url := strings.Replace(url, "FUZZ",strings.Replace(path, "\n", "", -1), -1)
+		fmt.Println(new_url)
 	}
 	
 }
